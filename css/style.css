@@ -1,0 +1,607 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main {
+    background: linear-gradient(180deg, rgba(245, 245, 245, 0) 1.04%, #F5F5F5 100%);
+    display: flex;
+    flex: 1 1 auto;
+    margin-bottom: auto;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    padding-top: 44px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.input {
+    display: flex;
+    height: 40px;
+    padding-left: 32px;
+    font-size: 16px;
+    line-height: 24px;
+    background-repeat: no-repeat;
+    background-position: center left 10px;
+    color: #BFBFBF;
+    border: 1px solid #D9D9D9;
+    border-radius: 2px;
+}
+
+.input_address {
+    flex: 0.9;
+    background-image: url(../img/home.svg);
+}
+
+.input_restaurants {
+    margin-left: auto;
+    width: 306px;
+    background-image: url(../img/search.svg);
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    background: #FFFFFF;
+    color: #595959;
+    font-size: 16px;
+    line-height: 24px;
+    border: 1px solid #D9D9D9;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.0015);
+    border-radius: 2px;
+    cursor: pointer;
+
+}
+
+.btn-primary {
+    border: 1px solid #1890FF;
+    background: #1890FF;
+    color: #ffffff;
+    margin-right: 10px;
+}
+
+.btn-text {
+    margin-left: 4px;
+}
+
+.offer {
+    border-radius: 10px;
+    max-height: 300px;
+    margin: 48px 0 28px;
+    padding: 68px 78px;
+    filter: drop-shadow(0px 7px 12px rgba(158, 158, 163, 0.1));
+    background: #FFF1B8 url(../img/offer-img.png) top 30px right -70px no-repeat;
+}
+
+.offer_title {
+    font-weight: 700;
+    font-size: 39px;
+    line-height: 46px;
+    margin-bottom: 10px;
+    color: #302C34;
+}
+
+.offer_text {
+    display: inline-block;
+    max-width: 538px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #302C34;
+}
+
+.restaurants {
+    margin-top: 40px;
+    padding-bottom: 70px;
+}
+
+.restaurants_header {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 44px;
+}
+
+.restaurants_title {
+    margin-right: 30px;
+    font-size: 30px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.card_link {
+    display: flex;
+    text-decoration: none;
+    color: #000;
+    flex-basis: 32%;
+}
+
+.card {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 7px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.card_body {
+    padding: 20px 23px 35px;
+}
+
+.card_heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.card_img {
+    width: 100%;
+    min-height: 250px;
+    object-fit: cover;
+}
+
+.card_title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.card_title-reg {
+    font-weight: 400;
+}
+
+.card_text {
+    font-size: 18px;
+    line-height: 21px;
+    color: #8C8C8C;
+    margin-bottom: 24px;
+}
+
+.card_time {
+    font-size: 12px;
+    line-height: 20px;
+    width: 55px;
+    height: 22px;
+    background: #262626;
+    border-radius: 2px;
+    color: #fff;
+    text-align: center;
+}
+
+.card_footer {
+    display: flex;
+    align-items: center;
+}
+
+.card_star {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 32px;
+    color: #FFC107;
+    margin-right: 26px;
+}
+
+.card_price,
+.card_name {
+    font-size: 18px;
+    line-height: 32px;
+    color: #8C8C8C;
+}
+
+.card_price {
+    margin-right: 25px;
+    position: relative;
+}
+
+.strong_price {
+    margin-left: 32px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.cart_img {
+    margin-left: 5px;
+}
+
+.card_price::after {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: #8C8C8C;
+    border-radius: 100px;
+    top: 13px;
+    right: -13px;
+}
+
+.star {
+    margin-right: 4px;
+}
+
+.footer {
+    margin-top: auto;
+    padding: 57px 0;
+}
+
+.footer_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_logo {
+    margin-right: 35px;
+}
+
+.nav {
+    margin-right: auto;
+}
+
+.nav_link {
+    font-size: 18px;
+    line-height: 21px;
+    color: #595959;
+    text-decoration: none;
+}
+
+.social_links {
+    display: flex;
+    align-items: center;
+}
+
+.nav_link:not(:last-child) {
+    margin-right: 15px;
+}
+
+.social_link:not(:last-child) {
+    margin-right: 21px;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: none;
+}
+.modal_show {
+    display: flex;
+}
+.modal_wrapper {
+    width: 780px;
+    min-height: 552px;
+    margin: auto;
+    background: #FFFFFF;
+    border-radius: 5px;
+    padding: 40px 45px;
+}
+
+.modal_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn_close {
+    border: none;
+    background: #fff;
+    font-size: 38px;
+    cursor: pointer;
+}
+
+.modal_body {
+    margin: 45px 0 50px;
+}
+
+.foods_list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #D9D9D9;
+}
+
+.foods_list:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.foods_title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+.foods_price {
+    margin: 0 47px 0 auto;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.button {
+    width: 39px;
+    height: 32px;
+    border: 1px solid #40A9FF;
+    box-sizing: border-box;
+    border-radius: 2px;
+    font-size: 14px;
+    line-height: 22px;
+    color: #40A9FF;
+    background-color: inherit;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.counter {
+    margin: 0 13px;
+}
+
+.button:hover {
+    color: #fff;
+    background-color: #40A9FF;
+}
+
+.modal_footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price {
+    padding: 15px 20px;
+    background: #262626;
+    border-radius: 5px;
+    color: #fff;
+}
+
+
+
+
+
+
+@media (max-width: 1300px) {
+    .container {
+        max-width: 1000px;
+    }
+
+    .offer {
+        background-position: top 30px right -182px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .container {
+        max-width: 900px;
+    }
+
+    .offer {
+        background-position: top 30px right -250px;
+    }
+
+    .offer_title {
+        font-size: 33px;
+        line-height: 39px;
+    }
+
+    .offer_text {
+        max-width: 455px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 968px) {
+    .container {
+        max-width: 768px;
+    }
+
+    .offer {
+        padding-left: 41px;
+    }
+
+    .card_link {
+        flex-basis: 48%;
+    }
+
+    .nav {
+        margin: auto;
+    }
+}
+
+@media (max-width: 790px) {
+    .container {
+        max-width: 576px;
+    }
+
+    .offer {
+        margin: 48px 0;
+        background: #FFF1B8;
+        padding: 57px 35px;
+    }
+
+    .offer_title {
+        font-size: 28px;
+        line-height: 35px;
+    }
+
+    .offer_text {
+        max-width: 423px;
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .nav {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        max-width: 450px;
+    }
+
+    .header {
+        flex-wrap: wrap;
+    }
+
+    .offer {
+        margin: 30px 0;
+    }
+
+    .input_address {
+        margin-top: 25px;
+        flex: 1;
+        order: 3;
+    }
+
+    .card_link {
+        flex-basis: 100%;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .offer_title {
+        font-size: 24px;
+        line-height: 31px;
+    }
+
+    .offer_text {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .restaurants_header {
+        flex-wrap: wrap;
+    }
+
+    .restaurants_title {
+        font-size: 20px;
+    }
+
+    .input_restaurants {
+        flex: 1;
+    }
+
+    .footer_inner {
+        flex-wrap: wrap;
+    }
+
+    .footer_logo {
+        order: -1;
+    }
+
+    .nav {
+        order: 1;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        margin: 20px 0;
+        flex-basis: 100%;
+    }
+}
+
+@media (max-width: 470px) {
+    .container {
+        max-width: 400px;
+    }
+
+    .input {
+        font-size: 13px;
+    }
+
+    .nav_link {
+        font-size: 16px;
+    }
+
+    .card_title {
+        font-size: 19px;
+    }
+
+    .card_price,
+    .card_name {
+        font-size: 15px;
+    }
+
+    .nav {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .nav_link:not(:last-child) {
+        margin-bottom: 8px;
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    .container {
+        max-width: 290px;
+    }
+
+    .btn-text {
+        display: none;
+    }
+
+    .input_restaurants {
+        margin-top: 15px;
+    }
+
+    .nav_link {
+        margin-bottom: 8px;
+        font-size: 16px;
+    }
+
+    .offer_title {
+        font-size: 21px;
+        line-height: 26px;
+    }
+
+    .offer_text {
+        font-size: 13px;
+        line-height: 20px;
+    }
+}

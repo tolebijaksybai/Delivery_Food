@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="./css/animate.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Delivery Food</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <main class="main">
+            <div class="container">
+                <header class="header">
+                    <a href="./index.html" class="animated fadeInLeft">
+                        <img class="logo" src="./img/logo.svg" alt="Logo">
+                    </a>
+                    <input type="text" class="input input_address animated fadeInDown" placeholder="Адрес доставки">
+                    <div class="buttons animated fadeInRight">
+                        <button class="btn btn-primary">
+                            <img src="./img/user.svg" alt="user">
+                            <span class="btn-text">Войти</span>
+                        </button>
+                        <button class="btn cart_btn">
+                            <img src="./img/cart.svg" alt="cart">
+                            <span class="btn-text">Корзина</span>
+                        </button>
+                    </div>
+                </header>
+    
+                <div class="offer animated fadeInLeft">
+                    <h2 class="offer_title">
+                        Онлайн-сервис <br> доставки еды на дом
+                    </h2>
+                    <p class="offer_text">
+                        Блюда из любимого ресторана привезет курьер в перчатках, маске и с антисептиком
+                    </p>
+                </div>
+                <!-- /.offer -->
+                <div id="restaurants" class="restaurants">
+                    <div class="restaurants_header">
+                        <h2 class="restaurants_title animated fadeInLeft">
+                            Рестораны
+                        </h2>
+                        <input type="text" class="input input_restaurants animated fadeInRight" placeholder="Поиск блюд и ресторанов">
+                    </div>
+                    <div class="restaurants_body">
+                        <div class="cards animated fadeInUp">
+                            <a class="card_link" href="./restaurant.html" >
+                                <div class="card" >
+                                    <img class="card_img" src="./img/food-1.png" alt="food-1">
+                                    <div class="card_body">
+                                        <div class="card_heading">
+                                            <h2 class="card_title">Пицца плюс</h2>
+                                            <span class="card_time">50 мин</span>
+                                        </div>
+                                        <div class="card_footer">
+                                            <p class="card_star"><img class="star" src="./img/star.svg" alt="star"> 4.5</p>
+                                            <p class="card_price">От 900 ₽</p>
+                                            <p class="card_name">Пицца</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.card -->
+                            </a>
+                            <a class="card_link" href="./restaurant.html ">
+                                <div class="card">
+                                    <img class="card_img" src="./img/food-2.png" alt="food-2">
+                                    <div class="card_body">
+                                        <div class="card_heading">
+                                            <h2 class="card_title">Тануки</h2>
+                                            <span class="card_time">50 мин</span>
+                                        </div>
+                                        <div class="card_footer">
+                                            <p class="card_star"><img class="star" src="./img/star.svg" alt="star">4.5</p>
+                                            <p class="card_price">От 900 ₽</p>
+                                            <p class="card_name">Пицца</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.card -->
+                            </a>
+                            <a class="card_link" href="./restaurant.html" >
+                                <div class="card">
+                                    <img class="card_img" src="./img/food-3.png" alt="food-3">
+                                    <div class="card_body">
+                                        <div class="card_heading">
+                                            <h2 class="card_title">FoodBand</h2>
+                                            <span class="card_time">50 мин</span>
+                                        </div>
+                                        <div class="card_footer">
+                                            <p class="card_star"><img class="star" src="./img/star.svg" alt="star">4.5</p>
+                                            <p class="card_price">От 900 ₽</p>
+                                            <p class="card_name">Пицца</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.card -->
+                            </a>
+                            <a class="card_link" href="./restaurant.html">
+                                <div class="card">
+                                    <img class="card_img" src="./img/food-4.png" alt="food-4">
+                                    <div class="card_body">
+                                        <div class="card_heading">
+                                            <h2 class="card_title">Жадина-пицца</h2>
+                                            <span class="card_time">50 мин</span>
+                                        </div>
+                                        <div class="card_footer">
+                                            <p class="card_star"><img class="star" src="./img/star.svg" alt="star">4.5</p>
+                                            <p class="card_price">От 900 ₽</p>
+                                            <p class="card_name">Пицца</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.card -->
+                            </a>
+                            <a class="card_link" href="./restaurant.html">
+                                <div class="card">
+                                    <img class="card_img" src="./img/food-5.png" alt="food-5">
+                                    <div class="card_body">
+                                        <div class="card_heading">
+                                            <h2 class="card_title">Точка еды</h2>
+                                            <span class="card_time">50 мин</span>
+                                        </div>
+                                        <div class="card_footer">
+                                            <p class="card_star"><img class="star" src="./img/star.svg" alt="star">4.5</p>
+                                            <p class="card_price">От 900 ₽</p>
+                                            <p class="card_name">Пицца</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.card -->
+                            </a>
+                            <a class="card_link" href="./restaurant.html">
+                                <div class="card">
+                                    <img class="card_img" src="./img/food-6.png" alt="food-6">
+                                    <div class="card_body">
+                                        <div class="card_heading">
+                                            <h2 class="card_title">PizzaBurger</h2>
+                                            <span class="card_time">50 мин</span>
+                                        </div>
+                                        <div class="card_footer">
+                                            <p class="card_star"><img class="star" src="./img/star.svg" alt="star">4.5</p>
+                                            <p class="card_price">От 900 ₽</p>
+                                            <p class="card_name">Пицца</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.card -->
+                            </a>
+                        </div>
+                        <!-- /.cards -->
+                    </div>
+                </div>
+                <!-- /.restarants -->
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer_inner">
+                    <div class="footer_logo animated fadeInLeft">
+                        <a href="./index.html"><img src="./img/logo.svg" alt="Logo"></a>
+                    </div>
+                    <nav class="nav animated fadeInDown">
+                        <a class="nav_link" href="#restaurants">Ресторанам</a>
+                        <a class="nav_link" href="#contacts">Курьерам</a>
+                        <a class="nav_link" href="#contacts">Пресс-центр</a>
+                        <a class="nav_link" href="#contacts">Контакты</a>
+                    </nav>
+                    <div id="contacts" class="social_links animated fadeInRight">
+                        <a class="social_link" href="#"><img src="./img/insta.svg" alt="instagram"></a>
+                        <a class="social_link" href="#"><img src="./img/fb.svg" alt="facebook"></a>
+                        <a class="social_link" href="#"><img src="./img/vk.svg" alt="vkontakte"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="modal ">   <!-- modal_show -->
+            <div class="modal_wrapper">
+                <div class="modal_header">
+                    <h2 class="restaurants_title">Корзина</h2>
+                    <button class="btn_close">&times;</button>
+                </div>
+                <!-- /.modal_header -->
+                <div class="modal_body">
+                    <div class="foods_list">
+                        <h2 class="foods_title">Ролл угорь стандарт</h2>
+                        <strong class="foods_price">250 ₽</strong>
+                        <button class="button btn-minus">-</button>
+                        <div class="counter">1</div>
+                        <button class="button btn-pluse">+</button>
+                    </div>
+                    <div class="foods_list">
+                        <h2 class="foods_title">Ролл угорь стандарт</h2>
+                        <strong class="foods_price">250 ₽</strong>
+                        <button class="button btn-minus">-</button>
+                        <div class="counter">1</div>
+                        <button class="button btn-pluse">+</button>
+                    </div>
+                    <div class="foods_list">
+                        <h2 class="foods_title">Ролл угорь стандарт</h2>
+                        <strong class="foods_price">250 ₽</strong>
+                        <button class="button btn-minus">-</button>
+                        <div class="counter">1</div>
+                        <button class="button btn-pluse">+</button>
+                    </div>
+                    <div class="foods_list">
+                        <h2 class="foods_title">Ролл угорь стандарт</h2>
+                        <strong class="foods_price">250 ₽</strong>
+                        <button class="button btn-minus">-</button>
+                        <div class="counter">1</div>
+                        <button class="button btn-pluse">+</button>
+                    </div>
+                    <div class="foods_list">
+                        <h2 class="foods_title">Ролл угорь стандарт</h2>
+                        <strong class="foods_price">250 ₽</strong>
+                        <button class="button btn-minus">-</button>
+                        <div class="counter">1</div>
+                        <button class="button btn-pluse">+</button>
+                    </div>
+                </div>
+                <!-- /.modal_body -->
+                <div class="modal_footer ">
+                    <span class="price">1250 ₽</span>
+                    <div class="buttons">
+                        <button class="btn btn-primary">
+                            <span class="btn-text">Оформить заказ</span>
+                        </button>
+                        <button class="btn">
+                            <span class="btn-text btn_cancel">Отмена</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- /.modal_footer -->
+            </div>
+        <!-- /.modal_wrapper -->
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
