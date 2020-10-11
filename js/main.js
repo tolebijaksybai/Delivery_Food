@@ -1,5 +1,3 @@
-new WOW().init();
-
 const cartBtn = document.querySelector('.cart_btn'),
         modal = document.querySelector('.modal'),
         closeBtn = document.querySelector('.btn_close'),
