@@ -1,4 +1,4 @@
-# Delivery - Food
+# Delivery_Food
 Адаптивный сервис по доставке еды: Сделона на HTML, CSS, немного JS, и с анимациями
 
 Ссылка на сайт: https://tolebijaksybai.github.io/Delivery_Food/
