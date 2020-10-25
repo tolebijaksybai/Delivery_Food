@@ -75,7 +75,6 @@ body {
     background: #FFFFFF;
     color: #595959;
     font-size: 16px;
-    line-height: 24px;
     border: 1px solid #D9D9D9;
     box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.0015);
     border-radius: 2px;
@@ -310,7 +309,8 @@ body {
     display: flex;
 }
 .modal_wrapper {
-    width: 780px;
+    max-width: 780px;
+    width: 90%;
     min-height: 552px;
     margin: auto;
     background: #FFFFFF;
@@ -350,14 +350,12 @@ body {
 .foods_title {
     font-weight: 400;
     font-size: 18px;
-    line-height: 32px;
 }
 
 .foods_price {
     margin: 0 47px 0 auto;
     font-weight: bold;
     font-size: 20px;
-    line-height: 32px;
 }
 
 .button {
@@ -390,11 +388,15 @@ body {
 }
 
 .price {
-    padding: 15px 20px;
+    padding: 0 20px;
+    height: 40px;
+    line-height: 40px;
     background: #262626;
     border-radius: 5px;
     color: #fff;
 }
+
+
 
 
 
@@ -541,11 +543,18 @@ body {
         margin: 20px 0;
         flex-basis: 100%;
     }
+    .foods_title, .foods_price, .counter {
+        font-size: 13px;
+    }
+    .price, .btn-text, .btn_cancel {
+        font-size: 13px;
+    }
+
 }
 
 @media (max-width: 470px) {
     .container {
-        max-width: 400px;
+        max-width: 410px;
     }
 
     .input {
@@ -573,23 +582,53 @@ body {
     .nav_link:not(:last-child) {
         margin-bottom: 8px;
     }
+    .btn-minus, .btn-pluse {
+        width: 30px;
+        height: 26px;
+    }
+    .foods_price {
+        margin: auto;
+    }
+    .modal_wrapper {
+        padding: 19px 34px;
+    }
+    .modal_footer {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .modal_footer .price {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .modal_footer .buttons {
+        width: 100%;
+    }
+    .modal_footer .btn{
+        align-items: center;
+        width: 50%;
+    }
+    
+    
 
 }
 
 @media (max-width: 400px) {
 
     .container {
-        max-width: 290px;
+        max-width: 308px;
     }
 
-    .btn-text {
+    .header .btn-text {
         display: none;
     }
-
-    .input_restaurants {
-        margin-top: 15px;
+    .modal_wrapper {
+        padding: 14px 21px;
     }
-
+    .foods_price {
+        text-align: center;
+        width: 56px;
+    }
     .nav_link {
         margin-bottom: 8px;
         font-size: 16px;
